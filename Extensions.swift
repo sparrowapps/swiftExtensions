@@ -2,8 +2,8 @@
 //  Extensions.swift
 //  VideoController
 //
-//  Created by 이화트론 on 2018. 4. 5..
-//  Copyright © 2018년 이화트론. All rights reserved.
+//  Created by sparrowapps on 2018. 4. 5..
+//  Copyright © 2018년 sparrowapps. All rights reserved.
 //
 
 import Foundation
