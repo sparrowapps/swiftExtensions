@@ -212,6 +212,17 @@ extension String {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
+    
+    func percentEscapeString() -> String {
+        var characterSet = CharacterSet.alphanumerics
+        characterSet.insert(charactersIn: "-._* ")
+        
+        return self
+            .addingPercentEncoding(withAllowedCharacters: characterSet)!
+            .replacingOccurrences(of: " ", with: "+")
+            .replacingOccurrences(of: " ", with: "+", options: [], range: nil)
+    }
+
 }
 
 extension UITextField {
